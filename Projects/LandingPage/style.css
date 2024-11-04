@@ -1,70 +1,51 @@
 body{
-    background-color: #e7f0f9;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0px;
 }
+#contactIcon{
+    width: 100px;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+}
 #title{
+    background-color: lightgray;
     text-align: center;
-    background-image: url("images/stripes.jpg");
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no repeat;
-    height: 250px;
-    padding-top: 70px;
-    color: white
-    
-}
-#button{
-    border-width: 0px;
-    background-color: #24a0ed;
-    color: white;
-    height: 35px;
-    width: 115px;
-    border-radius: 5px;
-    font-size: 15px;
-    transform: translateY(20px);
-    font-weight: bold;
-}
-#button:hover{
-    background-color: #237fb7;
-}
-h1{
-    font-size: 45px;
-}
-#features{
-    display: flex;
-    justify-content: center; 
-    background-color: #dfdfdf;
-    height: 300px;
-    margin-bottom: 0px;
+    margin: auto;
+    border-radius: 3px;
+    padding: 20px;
 
 }
-.feat{
-    border: 0px solid;
+#about{
+    background-color: lightgray;
+    margin: 8px;
+    border-radius: 3px;
+    padding: 10px; 
+       
+}
+#projects{
+    margin: 8px;
+    background-color: lightgray;
+    border-radius: 3px;
+    padding: 20px;
+
+}
+.projects{
+    
     width: 300px;
-    height: 200px;
-    float: left;
+    margin: 30px;
+    padding: 10px; 
+}
+.descTitle{
+    font-size: 50px;
+}
+#contact{
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 6%;
-    margin-left: 6%;
-    margin-right: 6%;
-    border-radius: 10px;
-    background-color:#e7f0f9;
-    box-shadow: 0 2px 6px #bdbdbd;
-    animation: 0.5s linear 1 running myScale;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: lightgrey;
+    margin: 8px;
+    border-radius: 3px;
+    padding: 20px;
 }
-.feat:hover{
-    transform: scale(1.05);
-    box-shadow: 0px 2px 20px #bdbdbd;
-}
-#rights{
-    text-align: center;
-    background-color: gray;
-    padding: 10px;
-}
-#rCont{
-    font-weight: bold;
+#descAbout{
+    font-size: 20px;
 }
