@@ -1,0 +1,89 @@
+/* Universal Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f3f3f3;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Container for Flex Layout */
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Header Section */
+  header {
+    background-color: #ff6b6b;
+    color: #ffffff;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.8em;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Button Styling */
+  button {
+    background-color: #ffb142;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #ff6b6b;
+  }
+  
+  /* Main Content Section */
+  .main-content {
+    max-width: 800px;
+    text-align: left;
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1, h2, h3 {
+    color: #54a0ff;
+  }
+  
+  p {
+    color: #333333;
+    line-height: 1.6;
+  }
+  
+  /* Colorful Cards */
+  .card {
+    background-color: #1dd1a1;
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.2s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    background-color: #54a0ff;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #ff6b6b;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+  }
+  
