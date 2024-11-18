@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sorty - Information Management System</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Login View -->
+    <div class="view" id="loginView">
+      <div class="card">
+        <h1>Welcome to Sorty</h1>
+        <p class="subtitle">
+          An information management system built for companies
+        </p>
+        <div class="form-group">
+          <input type="text" id="username" placeholder="Username" />
+          <input type="password" id="password" placeholder="Password" />
+          <div class="button-group">
+            <button onclick="switchView('welcomeView')" class="primary-btn">
+              Login
+            </button>
+            <button onclick="switchView('signupView')" class="secondary-btn">
+              Sign Up
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Signup View -->
+    <div class="view hidden" id="signupView">
+      <div class="card">
+        <h1>Sign Up</h1>
+        <div class="form-group">
+          <input type="text" placeholder="Username" />
+          <input type="email" placeholder="E-mail" />
+          <input type="password" placeholder="Password" />
+          <input type="password" placeholder="Confirm Password" />
+          <div class="button-group">
+            <button onclick="switchView('loginView')" class="primary-btn">
+              Create Account
+            </button>
+            <button onclick="switchView('loginView')" class="secondary-btn">
+              Back to Login
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Welcome View -->
+    <div class="view hidden" id="welcomeView">
+      <div class="content">
+        <h1>Hi <span id="welcomeUsername"></span>, welcome!</h1>
+        <p class="subtitle">Please choose platform</p>
+        <div class="grid">
+          <div class="platform-card" onclick="selectPlatform('Platform 1')">
+            <h2>Platform 1</h2>
+          </div>
+          <div class="platform-card" onclick="selectPlatform('Platform 2')">
+            <h2>Platform 2</h2>
+          </div>
+          <div class="platform-card" onclick="selectPlatform('Platform 3')">
+            <h2>Platform 3</h2>
+          </div>
+          <div class="platform-card add-card">
+            <div class="add-content">
+              <span class="plus">+</span>
+              <span>Add Platform</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Platform View -->
+    <div class="view hidden" id="platformView">
+      <div class="content">
+        <div class="breadcrumb">
+          <h1 id="platformTitle"></h1>
+          <span class="chevron">›</span>
+          <p>Please choose class</p>
+        </div>
+        <div class="grid">
+          <div class="class-card" onclick="selectClass('Class 1')">
+            <h2>Class 1</h2>
+            <div class="file-list">
+              <div class="folder-item">
+                <span class="folder-icon">📁</span>
+                <span>Folder 1</span>
+              </div>
+              <div class="file-item">
+                <span class="file-icon">📄</span>
+                <span>document.pdf</span>
+                <span class="date">2024-03-15</span>
+              </div>
+            </div>
+          </div>
+          <div class="class-card" onclick="selectClass('Class 2')">
+            <h2>Class 2</h2>
+            <div class="file-list">
+              <div class="folder-item">
+                <span class="folder-icon">📁</span>
+                <span>Folder 1</span>
+              </div>
+              <div class="file-item">
+                <span class="file-icon">📄</span>
+                <span>document.pdf</span>
+                <span class="date">2024-03-15</span>
+              </div>
+            </div>
+          </div>
+          <div class="class-card add-card">
+            <div class="add-content">
+              <span class="plus">+</span>
+              <span>Add Class</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Class View -->
+    <div class="view hidden" id="classView">
+      <div class="content">
+        <h1 id="classTitle"></h1>
+        <div class="card">
+          <div class="card-header">
+            <h2>Files</h2>
+            <button class="primary-btn">Upload File</button>
+          </div>
+          <div class="file-list">
+            <div class="file-item">
+              <span class="file-icon">📄</span>
+              <span>File 1.pdf</span>
+              <span class="date">2024-03-16</span>
+            </div>
+            <div class="file-item">
+              <span class="file-icon">📄</span>
+              <span>File 2.pdf</span>
+              <span class="date">2024-03-17</span>
+            </div>
+            <div class="file-item">
+              <span class="file-icon">📄</span>
+              <span>File 3.pdf</span>
+              <span class="date">2024-03-18</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Back Button -->
+    <button id="backButton" class="back-button hidden" onclick="goBack()">
+      Back
+    </button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
