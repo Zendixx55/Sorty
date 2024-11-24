@@ -122,6 +122,25 @@ body{
  }
 .loginHeader{
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   margin-top:150px;
+  text-align: center;
+}
+
+.fieldsignup{
+  margin: 15px;
+  height: 37px;
+  text-align: center;
+  font-family: CanvaSans;
+  border-radius: 10px;
+  border-color: #8c52ff;
+  border-style: solid;
+  background-color: #62e6a6;
+}
+.SignupCred{
+  display: flex;
+  flex-direction: column; /* Stack the input fields vertically */
+  justify-content:flex-end; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  height: 400px; /* Full viewport height */
 }
