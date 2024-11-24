@@ -4,6 +4,7 @@
 }
 body{
     font-family: 'CanvaSans';
+    background-color: #f1f3ff;
 }
 #Wheader{
     font-size: 25px;
@@ -23,9 +24,10 @@ body{
     font-weight: bold;
     color: #5271ff;
     transition: opacity 1s ease-in-out;
-    animation-delay: 1.5s;
     opacity: 0; /* Start invisible */
-  animation: fadeIn 3s ease-in-out forwards;
+  animation: fadeIn 2s ease-in-out forwards;
+  animation-delay: 1s;
+
 }
 #Wsubheader{
     display: flex;
@@ -36,7 +38,9 @@ body{
     transition: opacity 1s ease-in-out;
     animation-delay: 2.5s;
     opacity: 0; /* Start invisible */
-  animation: fadeIn 4s ease-in-out forwards;
+    animation: fadeIn 2s ease-in-out forwards;
+    animation-delay: 2s;
+
 }
 .Wbuttons{
    border: none;
@@ -54,9 +58,10 @@ body{
    transition-duration: 0.2s;
    margin: 50px;
    margin-top: 150px;
-   animation-delay: 4s;
    opacity: 0; /* Start invisible */
-   animation: fadeIn 6s ease-in-out forwards;   
+   animation: fadeIn 2s ease-in-out forwards;  
+   animation-delay: 3s;
+ 
 }
 .center{
     display: flex;
@@ -66,7 +71,8 @@ body{
 
 .Wbuttons:hover{
     background-color: #7746d9;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    padding: 15px; 
 }
 
 .Wbuttons:active{
@@ -75,19 +81,12 @@ body{
 
 }
 .rContainer{
-    display: flex;
-  flex-direction: column;
-  justify-content: flex-end; /* Push the .rights div to the bottom */
-  height: 100vh; /* Full viewport height */
+
 }
 .rights{
-    max-height: 200px; /* Limit the height */
-  overflow-y: auto; /* Add scrolling if content exceeds max-height */
-  background-color: #f0f0f0;
-  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Optional: Shadow for aesthetics */
-  padding: 20px;
-  width: 90%; /* Adjust width as needed */
-  margin: auto; /* Center horizontally */
+  display: flex;
+  justify-content: center;
+  font-size: 10px;
 }
 
 .fade-in {
@@ -103,3 +102,26 @@ body{
       opacity: 1; /* Fully visible */
     }
   }
+
+.loginCred{
+  display: flex;
+  flex-direction: column; /* Stack the input fields vertically */
+  justify-content:flex-end; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  height: 400px; /* Full viewport height */
+ }
+ .field{
+  margin: 30px;
+  height: 37px;
+  text-align: center;
+  font-family: CanvaSans;
+  border-radius: 10px;
+  border-color: #8c52ff;
+  border-style: solid;
+  background-color: #62e6a6;
+ }
+.loginHeader{
+  display: flex;
+  justify-content: center;
+  margin-top:150px;
+}
