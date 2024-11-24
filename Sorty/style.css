@@ -144,3 +144,17 @@ body{
   align-items: center; /* Center horizontally */
   height: 400px; /* Full viewport height */
 }
+
+.Wplatforms{
+  display: flex;
+  flex-direction: column;
+  margin-top:150px;
+  text-align: center;
+}
+
+.platforms{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
