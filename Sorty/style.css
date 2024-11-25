@@ -151,10 +151,57 @@ body{
   margin-top:150px;
   text-align: center;
 }
-
 .platforms{
+  display: flex; /* Activates Flexbox for horizontal layout */
+  justify-content: space-around; /* Spreads boxes evenly with space between */
+  align-items: center; /* Aligns items vertically (optional) */
+  gap: 10px; /* Adds space between items (modern alternative to margin) */
+  margin-top: 100px
+}
+.chooseplatformouter{
+  width: 200px;
+  height: 200px;
+  background-color: #5271ff;
+  color: white;
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  border-radius: 10px;
   text-align: center;
+  overflow: hidden; /* Prevents the inner div from overflowing */
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.301);
+  
+}
+
+.chooseplatforminner{
+  background-color: #fff; /* White background */
+  color: #4a76f1; /* Matching blue text color */
+  font-size: 16px; /* Text size */
+  font-weight: bold; /* Bold text */
+  padding: 15px 30px; /* Spacing inside the card */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15); /* Subtle shadow for elevation */
+  position: relative; /* Positions it above the blue box */
+  z-index: 2; /* Ensures it appears above the blue box */
+  text-align: center;
+  width: 200px;
+  font-size: 25px;display: flex; /* Flexbox for centering text */
+  justify-content: center; /* Center text horizontally */
+  align-items: center; /* Center text vertically */
+  height: 70px;
+  font-family: 'CanvaSans';
+  border: none;
+  cursor: pointer;
+}
+
+.chooseplatformouter:hover{
+  width: 203px;
+  height: 203px;
+  transition: all 150ms ease-in;
+}
+
+.chooseplatforminner:hover{
+  width: 203px;
+  height: 203px;
+  transition: all 150ms ease-in;
 }
